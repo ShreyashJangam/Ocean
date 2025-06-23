@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ocean Guardian - Empowering Planet, People, and Prosperity</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+
+<body>
+    <!-- Navigation -->
+    <nav id="navbar">
+        <div class="nav-container">
+            <div class="logo">🌊 Ocean Guardian</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#mission">Mission</a></li>
+                <li><a href="#impact">Impact</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+         
+            <button class="btn btn-secondary" onclick="openAuthModal('login')">Login</button>
+            <button class="btn btn-primary" onclick="openAuthModal('register')">Signup</button>
+            
+        </div>
+    </nav>
+    
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-background">
+            <div class="wave-animation"></div>
+        </div>
+        <div class="hero-content">
+            <h1>Ocean Guardian</h1>
+            <p class="hero-tagline">Empowering Planet, People, and Prosperity</p>
+            <div class="hero-buttons">
+                <a href="#volunteer" class="btn btn-primary">Join as Volunteer</a>
+                <a href="#donate" class="btn btn-secondary">Donate</a>
+                <a href="#projects" class="btn btn-secondary">Explore Projects</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mission Section -->
+    <section class="section" id="mission">
+        <div class="container">
+            <h2 class="section-title">Our Mission</h2>
+            <div class="mission-grid">
+                <div class="mission-card">
+                    <div class="mission-icon">🌍</div>
+                    <h3>Planet</h3>
+                    <p>Protecting marine ecosystems and biodiversity through conservation initiatives, sustainable practices, and environmental restoration projects worldwide.</p>
+                </div>
+                <div class="mission-card">
+                    <div class="mission-icon">👥</div>
+                    <h3>People</h3>
+                    <p>Empowering coastal communities through education, sustainable livelihoods, and building resilience against climate change impacts.</p>
+                </div>
+                <div class="mission-card">
+                    <div class="mission-icon">💰</div>
+                    <h3>Prosperity</h3>
+                    <p>Creating sustainable economic opportunities that benefit both marine environments and local communities for long-term prosperity.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Impact Section -->
+    <section class="section" id="impact">
+        <div class="container">
+            <h2 class="section-title">Latest Impact</h2>
+            <div class="impact-stats">
+                <div class="stat-card">
+                    <span class="stat-number">2.5M</span>
+                    <div class="stat-label">Square Miles Protected</div>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-number">15K</span>
+                    <div class="stat-label">Active Volunteers</div>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-number">847</span>
+                    <div class="stat-label">Species Saved</div>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-number">92%</span>
+                    <div class="stat-label">Community Satisfaction</div>
+                </div>
+            </div>
+
+            <!-- Featured Story -->
+            <div class="featured-story">
+                <div class="story-content">
+                    <h3 class="story-title">Volunteer Spotlight: Maria's Coral Restoration Journey</h3>
+                    <p class="story-text">
+                        Marine biologist Maria Santos has led our coral restoration project in the Philippines for three years, 
+                        successfully rehabilitating over 500 hectares of damaged reef. Her innovative approach combines traditional 
+                        ecological knowledge with cutting-edge science, involving local fishing communities as active partners in 
+                        conservation. The project has not only restored marine biodiversity but also increased fish populations, 
+                        directly benefiting the livelihoods of over 1,200 local fishers.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="cta-section">
+        <div class="container">
+            <h2 class="cta-title">Be an Ocean Guardian</h2>
+            <p class="cta-text">Join thousands of passionate individuals working to protect our oceans for future generations.</p>
+            <a href="#join" class="btn btn-secondary">Start Your Journey Today</a>
+        </div>
+    </section>
+
+    <!-- Login/Register Modal -->
+    <!-- Auth Modal -->
+        <div id="authModal">
+        <div class="auth-box">
+            <span class="auth-close" onclick="closeAuthModal()">×</span>
+
+            <!-- Login Form -->
+            <div id="loginForm">
+            <h3>Login</h3>
+            <input type="email" id="loginEmail" placeholder="Email" />
+            <input type="password" id="loginPassword" placeholder="Password" />
+            <button onclick="submitLogin()">Login</button>
+            <span class="toggle-link" onclick="showRegister()">Don't have an account? Register</span>
+            </div>
+
+            <!-- Register Form -->
+            <div id="registerForm" style="display: none;">
+            <h3>Register</h3>
+            <input type="email" id="registerEmail" placeholder="Email" />
+            <input type="password" id="registerPassword" placeholder="Password" />
+            <input type="password" id="confirmPassword" placeholder="Confirm Password" />
+            <button onclick="submitRegister()">Register</button>
+            <span class="toggle-link" onclick="showLogin()">Already have an account? Login</span>
+            </div>
+        </div>
+        </div>
+
+
+ 
+</body>
+
+<script src="script.js"></script>
+</html>
+
